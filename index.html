@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzling Over the Fractured Nature</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="dynamic-heading">Puzzling Over the Fractured Nature</h1>
+    <p>"When the balance of nature is broken, efforts to return will only lead to distorted outcomes."<br> 자연을 선택하고 조각을 더해 왜곡된 자연을 조립 해보세요.</p>
+    
+    <div id="button-container">
+        <button id="image1-button">the sky</button>
+        <button id="image2-button">fresh air</button>
+        <button id="image3-button">tree</button>
+        <button id="image4-button">forest</button>
+        <button id="image5-button">ocean</button>
+    </div>
+
+    <div id="camera-container" style="display: none; position: relative;">
+        <video id="camera" autoplay muted></video>
+        <button id="take-photo-button" style="position: absolute; bottom: 0px; left: 50%; transform: translateX(-50%);">Take a picture<br>:YOU</button>
+    </div>
+
+    <button id="image-mode-button">조각 더하기</button>
+    <button id="camera-mode-button">YOU: 내 모습 담기</button>
+
+    <canvas id="photo-canvas" style="display: none;"></canvas>
+    <div id="puzzle-board"></div>
+
+
+    <div id="image-fullscreen" style="display: none;"></div>
+
+
+
+
+<div id="popup-overlay" style="display: none;">
+    <div id="popup-message">
+        <p2>Fractured Future :NATURE & YOU <br>"한번 파괴된 자연은 다시 되돌릴 수 없습니다." <br>다시 맞출 수 없는 자연의 조각들을 조립해보며 자연 파괴의 심각성을 경험해보세요. </p2>
+        <button id="popup-close-button">되돌아가기</button>
+    </div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils"></script>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
