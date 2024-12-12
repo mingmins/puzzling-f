@@ -222,7 +222,7 @@ function createPuzzle(numPieces = 10) {
 }
 
 function checkPuzzlePieceCount() {
-    if (puzzlePieceCount >= 60) {
+    if (puzzlePieceCount >= 45) {
         showPopup();
     }
 }
